@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-serif: 'Playfair Display', 'Cormorant Garamond', Georgia, serif;
+  }
+
+  body {
+    background-color: #f7f5f0;
+    color: #1c2b23;
+    font-family: var(--font-sans);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-serif {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Homedine Card styling */
+.homedine-card {
+  background: #ffffff;
+  border-radius: 20px;
+  border: 1px solid rgba(229, 226, 218, 0.8);
+  box-shadow: 0 4px 20px -2px rgba(28, 43, 35, 0.04);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.homedine-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px -4px rgba(28, 43, 35, 0.08);
+}
+
+.homedine-pill-btn {
+  background-color: #0b2419;
+  color: #ffffff;
+  border-radius: 9999px;
+  transition: all 0.2s ease;
+}
+
+.homedine-pill-btn:hover {
+  background-color: #1a3c2c;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #edeae2;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c7c2b3;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a69f8c;
+}

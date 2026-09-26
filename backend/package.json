@@ -1,0 +1,36 @@
+{
+  "name": "ecommerce-backend",
+  "version": "1.0.0",
+  "description": "Production-quality full-stack ecommerce backend API (Pure Node.js & Express)",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "node --watch --watch-path=src src/server.js",
+    "start": "node src/server.js",
+    "seed": "node src/scripts/seed.js"
+  },
+  "keywords": [
+    "ecommerce",
+    "express",
+    "nodejs",
+    "javascript",
+    "mongodb",
+    "mongoose",
+    "jwt"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb-memory-server": "^10.1.4",
+    "mongoose": "^8.9.5",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
