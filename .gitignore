@@ -10,6 +10,10 @@ package-lock.json
 out/
 build/
 dist/
+dist_check/
+*/dist_check/
+.expo/
+*/.expo/
 *.tsbuildinfo
 
 # Environment variables & Local credentials

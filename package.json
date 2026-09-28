@@ -7,10 +7,14 @@
     "seed": "npm run seed --prefix backend",
     "dev:backend": "npm run dev --prefix backend",
     "dev:frontend": "npm run dev --prefix frontend",
+    "dev:mobile": "npm run start --prefix mobile",
+    "dev:mobile:android": "npm run android --prefix mobile",
+    "dev:mobile:ios": "npm run ios --prefix mobile",
+    "dev:mobile:web": "npm run web --prefix mobile",
     "build:backend": "node -e \"console.log('Backend is pure Node.js (no build step needed)')\"",
     "build:frontend": "npm run build --prefix frontend",
     "build": "npm run build:backend && npm run build:frontend",
-    "dev": "node -e \"console.log('Use \\\"npm run dev:backend\\\" and \\\"npm run dev:frontend\\\" in separate terminals, or see README.md')\""
+    "dev": "node -e \"console.log('Use \\\"npm run dev:backend\\\", \\\"npm run dev:frontend\\\", and \\\"npm run dev:mobile\\\" in separate terminals, or see README.md')\""
   },
   "keywords": ["ecommerce", "fullstack", "nextjs", "express", "nodejs", "mongodb"],
   "author": "",
